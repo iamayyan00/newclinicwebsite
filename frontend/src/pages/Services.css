@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Services Page Styles
+   ========================================================================== */
+
+.services-page {
+  width: 100%;
+}
+
+.services-main-section {
+  padding: 5rem 0;
+  background-color: var(--bg-page);
+}
+
+.all-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.25rem;
+}
+
+/* Bottom CTA Banner */
+.services-cta-banner {
+  padding: 4.5rem 0;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+}
+
+.cta-banner-box {
+  background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-900) 100%);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-text-content h3 {
+  color: #ffffff;
+  font-size: 1.85rem;
+  margin-bottom: 0.65rem;
+}
+
+.cta-text-content p {
+  color: #ccfbf1;
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.cta-banner-action-btn {
+  background-color: #ffffff;
+  color: var(--primary-800);
+  padding: 0.95rem 2rem;
+  border-radius: var(--radius-pill);
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.cta-banner-action-btn:hover {
+  background-color: var(--primary-50);
+  color: var(--primary-900);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  .cta-banner-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 1.75rem;
+  }
+  .cta-banner-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,252 @@
+/* ==========================================================================
+   DoctorProfile Page Styles
+   ========================================================================== */
+
+.doctor-profile-page {
+  width: 100%;
+}
+
+.doc-main-profile-section {
+  padding: 4.5rem 0;
+  background-color: var(--bg-surface);
+}
+
+.profile-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Registration Section */
+.doc-registration-section {
+  padding: 4.5rem 0;
+  background-color: var(--bg-page);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.registration-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.reg-detail-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.reg-detail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-300);
+}
+
+.reg-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.reg-icon-box.blue {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.reg-icon-box.gold {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.reg-card-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.reg-card-val {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.reg-card-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Awards Grid */
+.doc-awards-section {
+  padding: 4.5rem 0;
+  background-color: var(--bg-surface);
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.award-item-card {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: all var(--transition-normal);
+}
+
+.award-item-card:hover {
+  background-color: var(--bg-surface);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--primary-200);
+}
+
+.award-badge-icon {
+  font-size: 2rem;
+  color: #f59e0b;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.award-badge-icon.emerald {
+  color: #10b981;
+}
+
+.award-badge-icon.blue {
+  color: #0284c7;
+}
+
+.award-badge-icon.purple {
+  color: #9333ea;
+}
+
+.award-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.award-org {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-700);
+  margin-bottom: 0.45rem;
+}
+
+.award-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* CTA */
+.doc-cta-section {
+  padding: 4.5rem 0;
+  background-color: var(--bg-page);
+  border-top: 1px solid var(--border-light);
+}
+
+.doc-cta-card {
+  background: linear-gradient(135deg, #0f172a 0%, #115e59 100%);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem;
+  color: #ffffff;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.doc-cta-card h2 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.doc-cta-card p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.cta-btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.doc-cta-btn {
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.doc-cta-btn.primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.4);
+}
+
+.doc-cta-btn.primary:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.doc-cta-btn.whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+.doc-cta-btn.whatsapp:hover {
+  background-color: #20ba59;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 950px) {
+  .registration-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+  .doc-cta-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .doc-cta-card h2 {
+    font-size: 1.75rem;
+  }
+}

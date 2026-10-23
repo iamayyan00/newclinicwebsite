@@ -1,0 +1,21 @@
+{
+  "name": "solace-clinic-server",
+  "version": "1.0.0",
+  "description": "Backend API for Solace Clinic of Alternative Medicine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.10.1",
+    "morgan": "^1.10.0",
+    "validator": "^13.12.0"
+  }
+}

@@ -1,0 +1,289 @@
+/* ==========================================================================
+   About Page Styles
+   ========================================================================== */
+
+.about-page {
+  width: 100%;
+}
+
+/* Page Hero Banner */
+.page-hero-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #134e4a 100%);
+  color: #ffffff;
+  padding: 3.5rem 0 3rem;
+  border-bottom: 3px solid var(--primary-600);
+}
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-nav a {
+  color: var(--primary-300);
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-nav a:hover {
+  color: #ffffff;
+}
+
+.crumb-sep {
+  color: #64748b;
+}
+
+.crumb-active {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.page-hero-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page-hero-subtitle {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 650px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* About Story Section */
+.about-story-section {
+  padding: 5rem 0;
+  background-color: var(--bg-surface);
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.sub-badge {
+  display: inline-block;
+  background-color: var(--primary-100);
+  color: var(--primary-800);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.story-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.text-teal {
+  color: var(--primary);
+}
+
+.story-paragraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.lead-p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.about-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-700);
+  font-family: var(--font-heading);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Visual frame */
+.visual-image-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 6px solid #ffffff;
+}
+
+.about-facility-image {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.image-experience-tag {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: var(--shadow-md);
+}
+
+.image-experience-tag i {
+  font-size: 1.75rem;
+  color: #f59e0b;
+}
+
+.image-experience-tag strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.image-experience-tag small {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+/* Principles */
+.about-principles-section {
+  padding: 5rem 0;
+  background-color: var(--bg-page);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.principle-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.principle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-300);
+}
+
+.principle-icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-lg);
+  background-color: var(--primary-100);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.principle-icon-box.blue {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.principle-icon-box.gold {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.principle-icon-box.purple {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+.principle-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.65rem;
+}
+
+.principle-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Doctor Section */
+.about-doctor-section {
+  padding: 5rem 0;
+  background-color: var(--bg-surface);
+}
+
+.doctor-card-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@media (max-width: 950px) {
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .about-facility-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero-title {
+    font-size: 2rem;
+  }
+  .story-heading {
+    font-size: 1.75rem;
+  }
+  .about-stats-strip {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

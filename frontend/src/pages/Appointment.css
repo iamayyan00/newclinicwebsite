@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Appointment Page Styles
+   ========================================================================== */
+
+.appointment-page {
+  width: 100%;
+}
+
+.appointment-main-section {
+  padding: 4.5rem 0;
+  background-color: var(--bg-page);
+}
+
+.appointment-grid-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.75fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* Sidebar Column */
+.appointment-sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sidebar-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.sidebar-info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.sidebar-info-list li i {
+  font-size: 1.2rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.sidebar-info-list strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.sidebar-info-list p,
+.sidebar-info-list a {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.text-emerald {
+  color: #059669;
+}
+
+.why-choose-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.why-choose-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.why-choose-bullets li strong {
+  color: var(--text-main);
+}
+
+/* Testimonial Sidebar */
+.testimonial-sidebar {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, #f0fdfa 100%);
+  border-color: var(--primary-200);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.65rem;
+}
+
+.sidebar-testimonial-text {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 0.85rem;
+}
+
+.sidebar-testimonial-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-testimonial-author strong {
+  font-size: 0.85rem;
+  color: var(--primary-900);
+}
+
+.sidebar-testimonial-author small {
+  font-size: 0.75rem;
+  color: #059669;
+  font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  .appointment-grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .appointment-sidebar-col {
+    position: static;
+  }
+}

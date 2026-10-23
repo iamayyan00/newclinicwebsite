@@ -1,0 +1,100 @@
+/* ==========================================================================
+   FacilityCard Component Styles
+   ========================================================================== */
+
+.facility-component-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.facility-component-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-300);
+}
+
+.facility-icon-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  transition: transform var(--transition-normal);
+}
+
+.facility-component-card:hover .facility-icon-circle {
+  transform: scale(1.1);
+}
+
+/* Color schemes */
+.scheme-teal .facility-icon-circle {
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+}
+.scheme-blue .facility-icon-circle {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+.scheme-green .facility-icon-circle {
+  background-color: #d1fae5;
+  color: #059669;
+}
+.scheme-red .facility-icon-circle {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+.scheme-amber .facility-icon-circle {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.facility-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.facility-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.facility-feature-bullets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  background-color: var(--bg-page);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.facility-feature-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+.facility-feature-bullets li i {
+  color: var(--accent-emerald);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}

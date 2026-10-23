@@ -1,0 +1,293 @@
+/* ==========================================================================
+   DoctorProfileCard Component Styles
+   ========================================================================== */
+
+.doctor-profile-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  transition: all var(--transition-normal);
+}
+
+.doctor-profile-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-200);
+}
+
+.doc-card-photo-wrapper {
+  width: 280px;
+  min-height: 100%;
+  position: relative;
+  flex-shrink: 0;
+  background-color: var(--primary-50);
+}
+
+.doc-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.doc-photo-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.doc-photo-badge i {
+  color: #34d399;
+}
+
+.doc-card-body {
+  padding: 2.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-header-block {
+  margin-bottom: 1.25rem;
+}
+
+.doc-name {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--primary-900);
+  margin-bottom: 0.25rem;
+}
+
+.doc-degree {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.doc-specialty {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.doc-badges-list {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.doc-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.doc-pill.exp {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.doc-pill.mci {
+  background-color: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.doc-pill.rating {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.text-gold {
+  color: #f59e0b;
+}
+
+.doc-meta-table {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.doc-meta-item {
+  display: flex;
+  font-size: 0.875rem;
+  gap: 0.5rem;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: var(--text-muted);
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.meta-label i {
+  color: var(--primary);
+}
+
+.meta-val {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.doc-extended-bio {
+  margin-bottom: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.bio-title {
+  font-size: 1.15rem;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.doc-extended-bio p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.doc-accolades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.accolade-item {
+  display: flex;
+  gap: 0.75rem;
+  background-color: var(--primary-50);
+  border: 1px solid var(--primary-100);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+}
+
+.accolade-icon {
+  font-size: 1.25rem;
+  color: var(--primary-600);
+  margin-top: 2px;
+}
+
+.accolade-item strong {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--primary-900);
+  margin-bottom: 0.2rem;
+}
+
+.accolade-item p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.doc-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.btn-doc-book {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+  transition: all var(--transition-fast);
+}
+
+.btn-doc-book:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
+}
+
+.btn-doc-call,
+.btn-doc-whatsapp {
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.btn-doc-call {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+}
+
+.btn-doc-call:hover {
+  background-color: var(--primary-50);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-doc-whatsapp {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.btn-doc-whatsapp:hover {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+@media (max-width: 840px) {
+  .doctor-profile-card {
+    flex-direction: column;
+  }
+  .doc-card-photo-wrapper {
+    width: 100%;
+    height: 300px;
+  }
+  .doc-card-body {
+    padding: 1.5rem;
+  }
+  .doc-meta-item {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .doc-accolades {
+    grid-template-columns: 1fr;
+  }
+}

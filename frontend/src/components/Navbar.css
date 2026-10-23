@@ -1,0 +1,242 @@
+
+.clinic-header {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.07);
+}
+
+.clinic-navbar,
+.clinic-navbar * {
+  box-sizing: border-box;
+}
+
+.clinic-navbar {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 0;
+  margin: auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.clinic-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #087f78;
+  text-decoration: none;
+}
+
+.clinic-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.clinic-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.clinic-brand-text strong {
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.clinic-brand-text small {
+  font-size: 10px;
+  color: #475569;
+  letter-spacing: 0.4px;
+}
+
+.clinic-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.clinic-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.clinic-nav-link {
+  display: block;
+  padding: 12px 9px;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+
+.clinic-nav-link:hover,
+.clinic-nav-link.active {
+  color: #087f78;
+  background: #d8faf3;
+}
+
+.clinic-book-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 15px 18px;
+  background: #0b9488;
+  color: #fff;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.clinic-book-button:hover {
+  background: #08786f;
+}
+
+.clinic-menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  background: #e0f7f3;
+  cursor: pointer;
+}
+
+.clinic-menu-toggle span {
+  display: block;
+  height: 3px;
+  margin: 4px 0;
+  background: #087f78;
+  border-radius: 4px;
+}
+
+/* Laptop and smaller screens */
+@media (max-width: 1250px) {
+  .clinic-navbar {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .clinic-logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .clinic-brand-text strong {
+    font-size: 17px;
+  }
+
+  .clinic-brand-text small {
+    font-size: 9px;
+  }
+
+  .clinic-navigation {
+    gap: 5px;
+  }
+
+  .clinic-nav-link {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+
+  .clinic-book-button {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet and mobile */
+@media (max-width: 1000px) {
+  .clinic-navbar {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .clinic-brand-text strong {
+    font-size: 20px;
+  }
+
+  .clinic-menu-toggle {
+    display: block;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .clinic-navigation {
+    display: none;
+    width: 100%;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .clinic-navigation.is-open {
+    display: flex;
+  }
+
+  .clinic-nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .clinic-nav-link {
+    width: 100%;
+    padding: 13px 14px;
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .clinic-book-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .clinic-navbar {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .clinic-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .clinic-brand {
+    gap: 8px;
+  }
+
+  .clinic-brand-text strong {
+    font-size: 17px;
+  }
+
+  .clinic-brand-text small {
+    font-size: 8px;
+  }
+}

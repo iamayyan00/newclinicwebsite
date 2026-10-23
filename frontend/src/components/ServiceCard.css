@@ -1,0 +1,263 @@
+/* ==========================================================================
+   ServiceCard Component Styles
+   ========================================================================== */
+
+.service-component-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.service-component-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-300);
+}
+
+.service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.service-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.service-component-card:hover .service-icon-box {
+  transform: scale(1.08);
+}
+
+/* Color schemes */
+.scheme-teal .service-icon-box {
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+}
+.scheme-red .service-icon-box {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+.scheme-green .service-icon-box {
+  background-color: #d1fae5;
+  color: #059669;
+}
+.scheme-blue .service-icon-box {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+.scheme-pink .service-icon-box {
+  background-color: #fce7f3;
+  color: #db2777;
+}
+
+.service-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-section-block {
+  margin-bottom: 1.25rem;
+  background-color: var(--bg-page);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.service-block-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-800);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.service-bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.service-bullet-list li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-bullet-list li i {
+  color: var(--accent-emerald);
+  font-size: 0.8rem;
+}
+
+.service-step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.service-step-list li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-duration-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+}
+
+.service-duration-badge i {
+  color: var(--primary);
+}
+
+/* FAQ Accordion */
+.service-faq-container {
+  margin-bottom: 1.5rem;
+}
+
+.service-faq-header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.service-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-row {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: all var(--transition-fast);
+}
+
+.faq-row.open {
+  border-color: var(--primary-300);
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: left;
+}
+
+.faq-question-btn i {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-left: 0.5rem;
+}
+
+.faq-answer-pane {
+  padding: 0.65rem 0.85rem;
+  background-color: var(--bg-page);
+  border-top: 1px solid var(--border-light);
+}
+
+.faq-answer-pane p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Footer / CTA */
+.service-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.service-book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid var(--primary-200);
+  transition: all var(--transition-fast);
+}
+
+.service-book-btn:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+}
+
+.service-book-btn i {
+  transition: transform var(--transition-fast);
+}
+
+.service-book-btn:hover i {
+  transform: translateX(4px);
+}

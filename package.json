@@ -1,0 +1,25 @@
+{
+  "name": "solace-clinic",
+  "version": "1.0.0",
+  "description": "Full-stack web application for Solace Clinic of Alternative Medicine",
+  "scripts": {
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm run install:server && npm run install:client",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "start:server": "npm --prefix server start"
+  },
+  "keywords": [
+    "clinic",
+    "medical",
+    "homeopathy",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Solace Clinic",
+  "license": "ISC"
+}
